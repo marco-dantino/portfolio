@@ -2,12 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <title>portfolio</title>
+
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <header>
+      <a class="logo" href="https://colitienda.com/"><img style="width: 120px;" src="/public/completo-blanco.svg"/></a>
+
+      <nav style="margin-top: auto;">
+        <a href="">Home</a>
+        <a href="">Servicio</a>
+        <a href="">Skills</a>
+        <a href="">Educación</a>
+        <a href="">Experiencia</a>
+        <a href="">Contacto</a>
+      </nav>
+    </header>
+
+    <section class="home">
+      <picture class="home-img">
+        <img class="profile" src="/public/profile.webp" alt="Foto de perfil">
+      </picture>
+      
+      <section class="about">
+        <h1>Marco Javier D'Antino</h1>
+        <h3>hola <span>persona</span></h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut fugiat obcaecati vel cum saepe placeat eaque, iure dolores dolor tempora vitae nemo unde ipsa sed fuga perspiciatis impedit exercitationem sit.</p>
+        <button href="#" class="">Click me!</button>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/marcodantino" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/marco-dantino" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/marco.dantino/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </section>
+    </section>
+    
   </body>
 </html>
