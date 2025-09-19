@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="https://colitienda.com/"
+        ><img style="width: 180px" src="/public/completo-blanco.svg"
+      /></a>
+
+      <nav style="margin-top: auto">
+        <a href="/index.html">Home</a>
+        <a href="">Servicio</a>
+        <a href="">Educación</a>
+        <a href="">Experiencia</a>
+        <a href="/contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <section id="contacto" style="text-align: center; padding: 50px 20px">
+      <h2 style="font-size: 2rem; margin-bottom: 20px">Contactame</h2>
+
+      <form
+        action="mailto:marco.dantino@colidevs.com"
+        method="post"
+        enctype="text/plain"
+        style="
+          max-width: 500px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        "
+      >
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu email" required />
+        <textarea
+          name="mensaje"
+          rows="5"
+          placeholder="Tu mensaje"
+          required
+          style="
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            resize: none;
+          "
+        ></textarea>
+        <button type="submit">Enviar</button>
+        <div class="social-icons">
+          <a
+            href="https://github.com/marco-dantino"
+            target="_blank"
+            style="margin: 0 10px; color: white"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/marco.dantino/"
+            target="_blank"
+            style="margin: 0 10px; color: white"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/marcodantino"
+            target="_blank"
+            style="margin: 0 10px; color: white"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
