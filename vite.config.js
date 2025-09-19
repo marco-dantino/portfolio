@@ -6,10 +6,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        about: resolve(__dirname, "contacto.html"),
-        about: resolve(__dirname, "educacion.html"),
-        about: resolve(__dirname, "experiencia.html"),
-        about: resolve(__dirname, "servicio.html"),
+        contacto: resolve(__dirname, "contacto.html"),
+        educacion: resolve(__dirname, "educacion.html"),
+        experiencia: resolve(__dirname, "experiencia.html"),
+        servicio: resolve(__dirname, "servicio.html"),
       },
     },
   },
