@@ -1,66 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Poppins";
   line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-weight: 00;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+header {
+  margin-bottom: 20px;
+  display: flex;
+  padding: 1rem 9%;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+
+  background: rgba(14, 17, 17, 0.3);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 body {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background: #111;
+  background-image: url("../public/background.webp");
+  background-size: cover;
+  overflow: hidden;
   margin: 0;
+  background-attachment: fixed;
+}
+
+@media (max-width: 1366px) and (min-width: 1025px) {
+  body {
+    overflow-y: auto;
+  }
+}
+
+.logo {
+  transition: 0.5s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+
+nav {
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  align-items: end;
+  gap: 10px;
+}
+
+nav a {
+  font-size: 1.3rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.5s ease;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+nav a:hover,
+nav a:active {
+  color: lightsalmon;
+  border-bottom: 3px solid lightsalmon;
+}
+
+section {
   min-height: 100vh;
+  padding: 5rem 11% 5rem;
+}
+
+.home {
+  display: flex;
+  justify-content: flex-start;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 700px;
+  text-align: justify;
+}
+
+.profile {
+  width: 400px;
+  border-radius: 200px;
+  padding-left: 8rem;
+  border: 2px solid rgb(255, 162, 0);
+  padding: 2rem;
+  animation: glow 2s infinite alternate;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.social-icons a {
+  color: white;
+  font-size: 2rem;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0px rgba(0, 123, 255, 0);
+  }
+  100% {
+    box-shadow:
+      0 0 5px rgb(255, 162, 0),
+      0 0 10px rgba(255, 162, 0, 0.823),
+      0 0 20px rgba(255, 0, 0, 0.508),
+      0 0 40px rgba(255, 162, 0, 0.508);
+  }
+
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
 
 button {
@@ -70,27 +130,65 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #f1f1f1;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
 }
+
 button:hover {
-  border-color: #646cff;
+  background-color: lightsalmon;
+  color: white;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+input {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/*experienciaHtml*/
+#sectionTimeLine {
+  display: flex;
+  justify-content: center;
+}
+
+.timeline {
+  height: 100%;
+  max-width: 50%;
+  padding-left: 30px;
+  border-left: 2px solid lightsalmon;
+}
+
+.timeline-step {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.dot {
+  margin-top: 8px;
+  width: 16px;
+  height: 16px;
+  background: lightsalmon;
+  border-radius: 100%;
+  box-shadow: 0 0 8px lightsalmon;
+}
+
+.content h3 {
+  margin: 0 0 6px;
+  font-size: 1.4rem;
+  color: lightsalmon;
+}
+
+.content p {
+  margin: 0;
+  font-size: 1.3rem;
 }
