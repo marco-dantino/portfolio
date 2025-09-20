@@ -9,7 +9,7 @@ export default defineConfig({
         contacto: resolve(__dirname, "contacto.html"),
         educacion: resolve(__dirname, "educacion.html"),
         experiencia: resolve(__dirname, "experiencia.html"),
-        servicio: resolve(__dirname, "servicio.html"),
+        proyectos: resolve(__dirname, "proyectos.html"),
       },
     },
   },
